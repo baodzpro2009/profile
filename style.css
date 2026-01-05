@@ -1,0 +1,53 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:Inter}
+body{min-height:100vh;overflow-x:hidden}
+
+/* VIDEO BACKGROUND */
+.bg-video{position:fixed;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.bg-overlay{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:-1}
+
+/* PROFILE CARD */
+.profile{max-width:420px;margin:40px auto;background:#ffffffd6;border-radius:25px;box-shadow:0 0 20px rgba(0,0,0,.5);overflow:hidden;text-align:center;padding-bottom:20px}
+.avatar img{width:170px;height:170px;border-radius:50%;border:5px solid #1877f2;object-fit:cover;margin-top:25px}
+.name{font-size:28px;font-weight:600;margin-top:10px}
+.bio{margin:10px 0 15px;font-size:16px}
+
+/* LINKS */
+.box{width:85%;margin:12px auto;padding:14px;border-radius:20px;color:#fff;cursor:pointer;display:flex;align-items:center;gap:15px;font-size:18px;transition:.3s}
+.box:hover{transform:scale(1.05)}
+.box i{font-size:26px}
+.facebook{background:#1877f2}
+.tiktok{background:#000}
+.zalo{background:#0064f7}
+.mbbank{background:#1f00cf}
+
+/* SPOTIFY MINI */
+.spotify{
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:360px;
+  background:#181818;
+  color:#fff;
+  border-radius:20px;
+  padding:18px;
+  box-shadow:0 0 30px rgba(0,0,0,.6);
+  z-index:999;
+  cursor:grab;
+  user-select:none;
+}
+.spotify:active{cursor:grabbing}
+
+.song-title{font-size:18px;font-weight:600}
+.song-artist{font-size:13px;color:#aaa}
+
+.progress{width:100%;height:6px;background:#333;border-radius:10px;cursor:pointer;margin:10px 0 4px}
+.progress-bar{height:100%;width:0%;background:#1db954;border-radius:10px}
+.time{display:flex;justify-content:space-between;font-size:12px;color:#aaa}
+
+.controls{display:flex;justify-content:center;align-items:center;gap:22px;margin-top:10px}
+.controls i{font-size:20px;cursor:pointer;color:#aaa}
+.controls i:hover{color:#fff}
+.play{background:#1db954;width:55px;height:55px;border-radius:50%;display:flex;justify-content:center;align-items:center;color:#000;font-size:22px}
+
+@media(max-width:480px){.spotify{width:92%}}
