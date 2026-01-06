@@ -1,26 +1,108 @@
-*{margin:0;padding:0;box-sizing:border-box;font-family:Inter}
-body{min-height:100vh;overflow-x:hidden}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
 
-/* VIDEO BACKGROUND */
-.bg-video{position:fixed;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
-.bg-overlay{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:-1}
+body{
+  min-height:100vh;
+  overflow-x:hidden;
+}
 
-/* PROFILE CARD */
-.profile{max-width:420px;margin:40px auto;background:#ffffffd6;border-radius:25px;box-shadow:0 0 20px rgba(0,0,0,.5);overflow:hidden;text-align:center;padding-bottom:20px}
-.avatar img{width:170px;height:170px;border-radius:50%;border:5px solid #1877f2;object-fit:cover;margin-top:25px}
-.name{font-size:28px;font-weight:600;margin-top:10px}
-.bio{margin:10px 0 15px;font-size:16px}
+/* ================= VIDEO BACKGROUND ================= */
+.bg-video{
+  position:fixed;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  z-index:-2;
+}
+.bg-overlay{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.45);
+  z-index:-1;
+}
 
-/* LINKS */
-.box{width:85%;margin:12px auto;padding:14px;border-radius:20px;color:#fff;cursor:pointer;display:flex;align-items:center;gap:15px;font-size:18px;transition:.3s}
+/* ================= PROFILE CARD ================= */
+.profile{
+  max-width:420px;
+  margin:40px auto;
+  background:#ffffffd6;
+  border-radius:25px;
+  box-shadow:0 0 20px rgba(0,0,0,.5);
+  overflow:hidden;
+  text-align:center;
+  padding-bottom:20px;
+}
+
+.avatar img{
+  width:170px;
+  height:170px;
+  border-radius:50%;
+  border:5px solid #1877f2;
+  object-fit:cover;
+  margin-top:25px;
+}
+
+.name{
+  font-size:28px;
+  font-weight:600;
+  margin-top:10px;
+}
+
+/* ================= BIO ================= */
+.bio{
+  max-width:85%;
+  margin:10px auto 15px;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;      /* thẳng hàng trái */
+  gap:6px;
+  text-align:left;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+
+.bio span{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-size:17px;              /* TO HƠN */
+  font-weight:600;             /* ĐẬM HƠN */
+  color:#222;                  /* ĐẬM MÀU */
+}
+
+/* Tuỳ chọn đậm nhạt (nếu cần dùng) */
+.bio.small span{font-size:14px;font-weight:400}
+.bio.normal span{font-size:16px;font-weight:500}
+.bio.bold span{font-size:17px;font-weight:600}
+
+/* ================= LINKS ================= */
+.box{
+  width:85%;
+  margin:12px auto;
+  padding:14px;
+  border-radius:20px;
+  color:#fff;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  gap:15px;
+  font-size:18px;
+  transition:.3s;
+}
 .box:hover{transform:scale(1.05)}
 .box i{font-size:26px}
+
 .facebook{background:#1877f2}
 .tiktok{background:#000}
 .zalo{background:#0064f7}
 .mbbank{background:#1f00cf}
 
-/* SPOTIFY MINI */
+/* ================= SPOTIFY MINI ================= */
 .spotify{
   position:fixed;
   top:50%;
@@ -38,16 +120,65 @@ body{min-height:100vh;overflow-x:hidden}
 }
 .spotify:active{cursor:grabbing}
 
-.song-title{font-size:18px;font-weight:600}
-.song-artist{font-size:13px;color:#aaa}
+.song-title{
+  font-size:18px;
+  font-weight:600;
+}
+.song-artist{
+  font-size:13px;
+  color:#aaa;
+}
 
-.progress{width:100%;height:6px;background:#333;border-radius:10px;cursor:pointer;margin:10px 0 4px}
-.progress-bar{height:100%;width:0%;background:#1db954;border-radius:10px}
-.time{display:flex;justify-content:space-between;font-size:12px;color:#aaa}
+.progress{
+  width:100%;
+  height:6px;
+  background:#333;
+  border-radius:10px;
+  cursor:pointer;
+  margin:10px 0 4px;
+}
+.progress-bar{
+  height:100%;
+  width:0%;
+  background:#1db954;
+  border-radius:10px;
+}
 
-.controls{display:flex;justify-content:center;align-items:center;gap:22px;margin-top:10px}
-.controls i{font-size:20px;cursor:pointer;color:#aaa}
+.time{
+  display:flex;
+  justify-content:space-between;
+  font-size:12px;
+  color:#aaa;
+}
+
+.controls{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:22px;
+  margin-top:10px;
+}
+.controls i{
+  font-size:20px;
+  cursor:pointer;
+  color:#aaa;
+}
 .controls i:hover{color:#fff}
-.play{background:#1db954;width:55px;height:55px;border-radius:50%;display:flex;justify-content:center;align-items:center;color:#000;font-size:22px}
 
-@media(max-width:480px){.spotify{width:92%}}
+.play{
+  background:#1db954;
+  width:55px;
+  height:55px;
+  border-radius:50%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:#000;
+  font-size:22px;
+}
+
+/* ================= MOBILE ================= */
+@media(max-width:480px){
+  .spotify{width:92%}
+  .bio span{font-size:16px}
+}
