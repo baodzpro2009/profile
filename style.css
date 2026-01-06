@@ -70,8 +70,8 @@ body{
   display:flex;
   align-items:center;
   gap:8px;
-  font-size:17px;              /* TO HƠN */
-  font-weight:600;             /* ĐẬM HƠN */
+  font-size:18px;              /* TO HƠN */
+  font-weight:650;             /* ĐẬM HƠN */
   color:#222;                  /* ĐẬM MÀU */
 }
 
@@ -182,3 +182,4 @@ body{
   .spotify{width:92%}
   .bio span{font-size:16px}
 }
+
