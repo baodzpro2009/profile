@@ -2,7 +2,7 @@
 const playlist = [
   {name:"Bài 1", url:"https://files.catbox.moe/343g0o.mp4"},
   {name:"Bài 2", url:"https://files.catbox.moe/i6lum4.mp4"},
-  {name:"Bài 3", url:"https://files.catbox.moe/ojtfzd.mp4"},
+  {name:"Bài 3", url:"https://files.catbox.moe/qoc2wv.mp4"},
   {name:"Bài 4", url:"https://files.catbox.moe/plsvn1.mp4"}
 ];
 
@@ -122,6 +122,7 @@ function stopDrag(){ isDragging=false; }
 
 // ===== INIT =====
 loadSong(index);
+
 
 
 
