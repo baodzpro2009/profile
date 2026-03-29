@@ -54,27 +54,15 @@ body{
 }
 
 /* ================= BIO ================= */
-.bio{
-  max-width:85%;
-  margin:10px auto 15px;
-  display:flex;
-  flex-direction:column;
-  align-items:flex-start;
-  gap:6px;
-  text-align:left;
-  line-height:1.6;
-  -webkit-font-smoothing:antialiased;
-}
-
 .bio span{
   display:flex;
   align-items:center;
+  justify-content:center; /* icon + chữ nằm giữa */
   gap:8px;
   font-size:17px;
   font-weight:650;
   color:#222;
 }
-
 /* ================= LOCATION + TOOLTIP ================= */
 .location{
   position: relative;
