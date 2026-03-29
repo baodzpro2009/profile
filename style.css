@@ -59,7 +59,7 @@ body{
   margin:10px auto 15px;
   display:flex;
   flex-direction:column;
-  align-items:flex-start;      /* thẳng hàng trái */
+  align-items:flex-start;
   gap:6px;
   text-align:left;
   line-height:1.6;
@@ -70,15 +70,58 @@ body{
   display:flex;
   align-items:center;
   gap:8px;
-  font-size:17px;              /* TO HƠN */
-  font-weight:650;             /* ĐẬM HƠN */
-  color:#222;                  /* ĐẬM MÀU */
+  font-size:17px;
+  font-weight:650;
+  color:#222;
 }
 
-/* Tuỳ chọn đậm nhạt (nếu cần dùng) */
-.bio.small span{font-size:14px;font-weight:400}
-.bio.normal span{font-size:16px;font-weight:500}
-.bio.bold span{font-size:17px;font-weight:600}
+/* ================= LOCATION + TOOLTIP ================= */
+.location{
+  position: relative;
+  cursor: pointer;
+  color: #00ffe1;
+  transition: .3s;
+}
+
+.location:hover{
+  color: #fff;
+}
+
+/* Tooltip */
+.tooltip{
+  position: absolute;
+  bottom: 140%;
+  left: 50%;
+  transform: translateX(-50%) scale(.9);
+  background: rgba(0,0,0,.85);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 10px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: .25s;
+  box-shadow: 0 0 10px rgba(0,0,0,.4);
+}
+
+/* Mũi tên */
+.tooltip::after{
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: rgba(0,0,0,.85) transparent transparent transparent;
+}
+
+/* Hover hiện */
+.location:hover .tooltip{
+  opacity: 1;
+  transform: translateX(-50%) scale(1) translateY(-3px);
+}
 
 /* ================= LINKS ================= */
 .box{
@@ -182,5 +225,3 @@ body{
   .spotify{width:92%}
   .bio span{font-size:16px}
 }
-
-
