@@ -3,7 +3,9 @@ const playlist = [
   {name:"Bài 1", url:"https://files.catbox.moe/343g0o.mp4"},
   {name:"Bài 2", url:"https://files.catbox.moe/i6lum4.mp4"},
   {name:"Bài 3", url:"https://files.catbox.moe/qoc2wv.mp4"},
-  {name:"Bài 4", url:"https://files.catbox.moe/plsvn1.mp4"}
+  {name:"Bài 4", url:"https://files.catbox.moe/6vryoo.mp4"},
+  {name:"Bài 5", url:"https://files.catbox.moe/gcbu9w.mp4"},
+  {name:"Bài 6", url:"https://files.catbox.moe/plsvn1.mp4"}
 ];
 
 // ===== ELEMENTS =====
